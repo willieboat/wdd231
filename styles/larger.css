@@ -1,4 +1,4 @@
-@media (min-width: 38rem) {
+@media (min-width: 765px) {
 
     header,
     main,
@@ -33,6 +33,26 @@
     .navigation a {
         border: none;
         padding: 1rem;
+    }
+
+    .intro {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        align-items: stretch;
+    }
+
+    .about,
+    .photo {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about p {
+        margin-top: 0;
+        margin-bottom: auto;
     }
 
     .course-list {

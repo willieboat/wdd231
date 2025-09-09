@@ -17,14 +17,8 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/home.svg" alt="Logo" width="44" height="44" />
-        <span class="site-title">William's Course Homepage</span>
-        <button id="ham-btn" class="hamburger">
-            <span class="icon">☰</span>
-        </button>
-    </header>
-
+    <header> <img src="images/home.svg" alt="Logo" width="44" height="44" /> <span class="site-title">William's Course
+            Homepage</span> <button id="ham-btn" class="hamburger"> <span class="icon">☰</span> </button> </header>
     <nav id="nav-bar" class="navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -32,34 +26,27 @@
             <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
-
     <main>
         <h1>Home</h1>
-
-        <section class="about">
-            <h2>About Me</h2>
-            <p>
-                Born and bred in Ghana, I have navigated a lot of challenges through the enabling power of the gospel to
-                become what I am today. Currently working as a security personnel, I have interest in software
-                development and
-                I know that with the help of BYU Pathway and my hard work, I can become an expert in the field.
-            </p>
-        </section>
-
-        <section class="photo">
-            <h2>Student Photo</h2>
-            <img src="images/profile.webp" alt="Student photo" />
-        </section>
+        <div class="intro">
+            <section class="about">
+                <h2>About Me</h2>
+                <p> Born and bred in Ghana, I have navigated a lot of challenges through the enabling power of the
+                    gospel to
+                    become what I am today. Currently working as a security personnel, I have interest in software
+                    development and I know that with the help of BYU Pathway and my hard work, I can become an expert in
+                    the
+                    field. </p>
+            </section>
+            <section class="photo">
+                <h2>Student Photo</h2> <img src="images/profile.webp" alt="Student photo" />
+            </section>
+        </div>
 
         <section class="courses">
             <h2>Web Certificate Courses</h2>
-            <div class="course-filters">
-                <button type="button" data-filter="all">All</button>
-                <button type="button" data-filter="cse">CSE</button>
-                <button type="button" data-filter="wdd">WDD</button>
-            </div>
-
-
+            <div class="course-filters"> <button type="button" data-filter="all">All</button> <button type="button"
+                    data-filter="cse">CSE</button> <button type="button" data-filter="wdd">WDD</button> </div>
             <div class="course-list">
                 <div class="course-card" data-category="wdd">WDD 130</div>
                 <div class="course-card" data-category="wdd">WDD 131</div>
@@ -67,22 +54,17 @@
                 <div class="course-card" data-category="cse">CSE 110</div>
                 <div class="course-card" data-category="cse">CSE 210</div>
             </div>
-
             <p class="credits">The total credits for courses listed above is 6</p>
         </section>
     </main>
-
     <footer>
-        <div class="social">
-            <a href="https://web.facebook.com/" target="_blank" rel="noopener"><img src="images/facebook.svg"
-                    alt="Facebook" width="16" height="16" /></a>
-            <a href="https://x.com/__1satoshi__" target="_blank" rel="noopener"><img src="images/twitter.svg"
-                    alt="Twitter" width="16" height="16" /></a>
-            <a href="https://github.com/willieboat" target="_blank" rel="noopener"><img src="images/github.svg"
-                    alt="Github" width="16" height="16" /></a>
-            <a href="https://www.linkedin.com/in/william-ntow-boateng-5a2285210/" target="_blank" rel="noopener"><img
-                    src="images/linkedin.svg" alt="LinkedIn" width="16" height="16" /></a>
-        </div>
+        <div class="social"> <a href="https://web.facebook.com/" target="_blank" rel="noopener"><img
+                    src="images/facebook.svg" alt="Facebook" width="16" height="16" /></a> <a
+                href="https://x.com/__1satoshi__" target="_blank" rel="noopener"><img src="images/twitter.svg"
+                    alt="Twitter" width="16" height="16" /></a> <a href="https://github.com/willieboat" target="_blank"
+                rel="noopener"><img src="images/github.svg" alt="Github" width="16" height="16" /></a> <a
+                href="https://www.linkedin.com/in/william-ntow-boateng-5a2285210/" target="_blank" rel="noopener"><img
+                    src="images/linkedin.svg" alt="LinkedIn" width="16" height="16" /></a> </div>
         <p>&copy; <span id="year"></span> ▪William Ntow Boateng ▪Accra, Ghana</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
