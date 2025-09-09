@@ -54,18 +54,20 @@
         <section class="courses">
             <h2>Web Certificate Courses</h2>
             <div class="course-filters">
-                <a href="https://github.com/willieboat?tab=repositories" target="_blank" rel="noopener">All</a>
-                <a href="https://github.com/willieboat/cse210-projects" target="_blank" rel="noopener">CSE</a>
-                <a href="https://github.com/willieboat?tab=repositories" target="_blank" rel="noopener">WDD</a>
+                <button type="button" data-filter="all">All</button>
+                <button type="button" data-filter="cse">CSE</button>
+                <button type="button" data-filter="wdd">WDD</button>
             </div>
+
+
             <div class="course-list">
-                <a href="https://github.com/willieboat/wdd130" target="_blank" rel="noopener" class="course-card">WDD
-                    130</a>
-                <a href="https://github.com/willieboat/wdd131" target="_blank" rel="noopener" class="course-card">WDD
-                    131</a>
-                <a href="https://github.com/willieboat/wdd231" target="_blank" rel="noopener" class="course-card">WDD
-                    231</a>
+                <div class="course-card" data-category="wdd">WDD 130</div>
+                <div class="course-card" data-category="wdd">WDD 131</div>
+                <div class="course-card" data-category="wdd">WDD 231</div>
+                <div class="course-card" data-category="cse">CSE 110</div>
+                <div class="course-card" data-category="cse">CSE 210</div>
             </div>
+
             <p class="credits">The total credits for courses listed above is 6</p>
         </section>
     </main>

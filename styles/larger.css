@@ -1,6 +1,7 @@
-@media only screen and (min-width: 38rem) {
+@media (min-width: 38rem) {
 
     header,
+    main,
     nav,
     footer {
         max-width: 900px;
@@ -17,16 +18,12 @@
 
     .navigation {
         display: block;
-        border-top: 1px solid #eee;
         border-bottom: 1px solid #eee;
-        margin-bottom: 1rem;
     }
 
     .navigation ul {
         display: flex;
         justify-content: flex-start;
-        gap: 1rem;
-        padding: 0.4rem 0.6rem;
     }
 
     .navigation li {
@@ -34,44 +31,11 @@
     }
 
     .navigation a {
-        display: inline-block;
-        /* inline links (not tall block rows) */
         border: none;
-        padding: 0.4rem 0.6rem;
-    }
-
-    .navigation a:hover {
-        background: transparent;
-        border-bottom: 2px solid #E07A5F;
-        /* subtle underline hover */
-        color: #3D405B;
-    }
-
-    main {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 1rem;
-    }
-
-    .about {
-        grid-column: 1 / 2;
-    }
-
-    .photo {
-        grid-column: 2 / 3;
-    }
-
-    .courses {
-        grid-column: 1 / -1;
+        padding: 1rem;
     }
 
     .course-list {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .course-card {
-        flex: 1 1 30%;
-        margin: 0.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
