@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Highlight completed courses
     document.querySelectorAll(".course-card").forEach(card => {
         if (card.textContent.includes("WDD 130") ||
             card.textContent.includes("WDD 131") ||

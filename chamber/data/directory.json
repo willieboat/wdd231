@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Adom Agricultural Supplies",
+        "address": "12 Osu St., Accra, Ghana",
+        "phone": "+233240123001",
+        "website": "https://adom-agric.com",
+        "image": "images/agriculture.webp"
+    },
+    {
+        "name": "Kofi & Sons Construction",
+        "address": "45 Cantonments Rd., Accra",
+        "phone": "+233202345678",
+        "website": "https://kofi-construction.com",
+        "image": "images/construction.webp"
+    },
+    {
+        "name": "Sunrise Bakery",
+        "address": "6 Makola Market, Accra",
+        "phone": "+233243210987",
+        "website": "https://sunrise-bakery.com",
+        "image": "images/bakery.webp"
+    },
+    {
+        "name": "BlueWave IT Services",
+        "address": "2 Airport City, Accra",
+        "phone": "+233244567890",
+        "website": "https://bluewave-it.com",
+        "image": "images/it.webp"
+    },
+    {
+        "name": "Amoah Traders",
+        "address": "18 Tema Harbour Rd., Tema",
+        "phone": "+233205555012",
+        "website": "https://amoah-traders.com",
+        "image": "images/trader.webp"
+    },
+    {
+        "name": "GreenLeaf Pharmacy",
+        "address": "33 East Legon Ave., Accra",
+        "phone": "+233244000111",
+        "website": "https://greenleaf-pharmacy.com",
+        "image": "images/pharmacy.webp"
+    },
+    {
+        "name": "Willieboat Financial Services",
+        "address": "10 Independence Ave., Accra",
+        "phone": "+233531558066",
+        "website": "https://willieboat-finance.com",
+        "image": "images/finance.webp"
+    }
+]
