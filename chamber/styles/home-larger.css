@@ -1,6 +1,6 @@
-@media (min-width: 320px) {
+@media (min-width: 768px) {
     .navigation {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
         width: auto;
         background-color: transparent;
