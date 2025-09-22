@@ -63,7 +63,7 @@ header {
 
 .navigation a.active {
     background-color: darkcyan;
-    color: inherit;
+    color: black;
     font-weight: bold;
 }
 
@@ -125,11 +125,12 @@ main h1 {
 .current-weather h2,
 .forecast h2 {
     background-color: darkcyan;
-    color: #fff;
+    color: black;
     padding: 0.5rem;
     font-size: 1.2rem;
     margin-top: 0;
 }
+
 
 .info {
     display: grid;
@@ -156,7 +157,7 @@ main h1 {
 .business-header {
     background-color: darkcyan;
     justify-items: center;
-    color: white;
+    color: black;
 }
 
 .business-card h3 {
