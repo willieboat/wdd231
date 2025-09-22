@@ -22,7 +22,7 @@ header {
 .site-title {
     font-weight: bold;
     font-size: 1rem;
-    white-space: no wrap;
+    white-space: nowrap;
 }
 
 .hamburger {
@@ -150,8 +150,9 @@ main h1 {
 .business-card img {
     width: 100px;
     height: auto;
-    margin-bottom: 0.5rem auto;
     display: block;
+    margin: 0 auto 0.5rem;
+    /* fixed */
 }
 
 .business-header {
