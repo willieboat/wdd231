@@ -1,27 +1,26 @@
 const hamBtn = document.querySelector('.hamburger');
 const navBar = document.querySelector('.navigation');
 
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
-
-const forecastContainer = document.querySelector('.forecast');
-
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=5.56&lon=-0.20&units=metric&appid=8075dcf7a66bc54cb1a465d2e9f7ac32';
-
 hamBtn.addEventListener('click', () => {
     navBar.classList.toggle('open');
 });
 
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
+const forecastContainer = document.querySelector('.forecast');
+
+const weatherURL =
+    'https://api.openweathermap.org/data/2.5/weather?lat=5.56&lon=-0.20&units=metric&appid=8075dcf7a66bc54cb1a465d2e9f7ac32';
+
 async function apiFetch() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(weatherURL);
         if (response.ok) {
             const data = await response.json();
             console.log(data);
             displayResults(data);
-        }
-        else {
+        } else {
             throw Error(await response.text());
         }
     } catch (error) {
@@ -32,8 +31,21 @@ async function apiFetch() {
 function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp.toFixed(1)}&deg;C`;
 
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    weatherIcon.setAttribute('src', iconsrc);
+    const iconBase = 'https://openweathermap.org/img/wn/';
+    const iconCode = data.weather[0].icon;
+
+    const iconUrl = `${iconBase}${iconCode}.png`;
+
+    weatherIcon.setAttribute('src', iconUrl);
+    weatherIcon.setAttribute(
+        'srcset',
+        `
+      ${iconBase}${iconCode}.png 1x,
+      ${iconBase}${iconCode}@2x.png 2x,
+      ${iconBase}${iconCode}@4x.png 4x
+    `
+    );
+
     weatherIcon.setAttribute('alt', data.weather[0].description);
 
     captionDesc.textContent = data.weather[0].description;
@@ -53,7 +65,7 @@ async function getForecast() {
     forecastContainer.innerHTML =
         `<h2>Weather Forecast</h2>` +
         days
-            .map(day => {
+            .map((day) => {
                 const weekday = new Date(day.dt * 1000).toLocaleDateString('en-US', {
                     weekday: 'long',
                 });
@@ -64,7 +76,7 @@ async function getForecast() {
 
 getForecast();
 
-document.getElementById('currentYear').textContent = new Date().getFullYear();
+document.getElementById('currentYear').textContent =
+    new Date().getFullYear();
 
 document.getElementById('lastModified').textContent = document.lastModified;
-
