@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        background-color: transparent;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navigation li {
+        border-bottom: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const navButton = document.querySelector("#ham-btn");
     const navBar = document.querySelector("#nav-bar");
 
-    // Toggle nav on small screens
     navButton.addEventListener("click", () => {
         navBar.classList.toggle("show");
     });
@@ -10,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const filterButtons = document.querySelectorAll(".course-filters button");
     const courseCards = document.querySelectorAll(".course-card");
 
-    // Filtering logic
     filterButtons.forEach(button => {
         button.addEventListener("click", () => {
             const filter = button.getAttribute("data-filter");
@@ -40,4 +38,23 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = document.lastModified;
 
+    function displayCourseDetails(course) {
+        courseDetails.innerHTML = '';
+        courseDetails.innerHTML = `
+            <button id="closeModal"> ❌</button>
+            <h2>${course.subject} ${course.number}</h2>
+            <h3>${course.title}</h3>
+            <p><strong>Certificate</strong>: ${course.certificate}</p>
+            <p>${course.description}</p>
+            <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+        `;
+        courseDetails.showModal();
+        closeModal.addEventListener("click", () => {
+            courseDetails.close();
+        })
+    }
+
+    courseDiv.addEventListener('click', () => {
+        displayCourseDetails(course);
+    });
 });
