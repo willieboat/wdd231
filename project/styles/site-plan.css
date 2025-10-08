@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: lightcyan;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.wireframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+figure {
+    text-align: center;
+    width: 45%;
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid lightcyan
+}
+
+figcaption {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: lightcyan;
+}
