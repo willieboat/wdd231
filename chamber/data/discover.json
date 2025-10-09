@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Independence Arch",
+        "address": "Black Star Square, Accra",
+        "description": "A symbol of Ghana’s freedom and independence.",
+        "image": "images/independence-arch.webp"
+    },
+    {
+        "name": "Kwame Nkrumah Mausoleum",
+        "address": "High Street, Accra",
+        "description": "Final resting place of Kwame Nkrumah, Ghana’s first president.",
+        "image": "images/nkrumah-mausoleum.webp"
+    },
+    {
+        "name": "Accra Ghana Temple",
+        "address": "Independence Avenue, Accra",
+        "description": "Temple of the Church of Jesus Christ of Latter-Day Saints",
+        "image": "images/accra-temple.webp"
+    },
+    {
+        "name": "Labadi Beach",
+        "address": "La, Accra",
+        "description": "Accra’s most popular beach.",
+        "image": "images/labadi-beach.webp"
+    },
+    {
+        "name": "Osu Castle",
+        "address": "Osu, Accra",
+        "description": "A 17th-century fort and former seat of government.",
+        "image": "images/osu-castle.webp"
+    },
+    {
+        "name": "Jamestown Lighthouse",
+        "address": "Jamestown, Accra",
+        "description": "Historic lighthouse offering panoramic views of the old town and the coast.",
+        "image": "images/jamestown-lighthouse.webp"
+    },
+    {
+        "name": "Airport City",
+        "address": "Giffard road, Accra",
+        "description": "One of the plush neighbourhoods in Accra.",
+        "image": "images/airport-city.webp"
+    },
+    {
+        "name": "University of Ghana",
+        "address": "Legon, Accra",
+        "description": "Ghana's Premier University",
+        "image": "images/ughana.webp"
+    }
+]

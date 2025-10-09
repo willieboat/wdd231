@@ -1,0 +1,45 @@
+@media (min-width: 1025px) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        background-color: transparent;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navigation li {
+        border-bottom: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .discover-grid {
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    .card {
+        max-width: 320px;
+    }
+
+    .card img:hover {
+        transform: scale(1.04);
+        transition: transform 240ms ease;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

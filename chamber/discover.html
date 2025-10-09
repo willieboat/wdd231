@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accra Chamber of Commerce - Directory</title>
+    <title>Chamber of Commerce - Discover Page</title>
     <meta name="author" content="William Ntow Boateng">
-    <meta name="description" content="WDD231 Chamber of Commerce Project Directory page">
-    <meta property="og:title" content="Accra Chamber of Commerce Directory">
-    <meta property="og:description"
-        content="Local businesses and organizations belonging to the Accra Chamber of Commerce">
+    <meta name="description" content="WDD231 Chamber Project - Discover Page">
+    <meta property="og:title" content="Accra Chamber of Commerce Join">
+    <meta property="og:description" content="Join the Accra Chamber of Commerce here.">
     <meta property="og:image"
         content="https://github.com/willieboat/wdd231/blob/main/chamber/images/directory-screenshot.jpg">
     <meta property="og:url" content="https://willieboat.github.io/wdd231/chamber/directory.html">
@@ -20,35 +19,33 @@
         rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-larger.css">
-    <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover-medium.css">
+    <link rel="stylesheet" href="styles/discover-larger.css">
+    <script src="scripts/discover.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="logo-container">
-            <img src="images/chamber-of-commerce.svg" alt="chamber Logo" loading="lazy">
+            <img src="images/chamber-of-commerce.svg" alt="Chamber Logo" loading="lazy">
             <span class="site-title">ACCRA CHAMBER OF COMMERCE</span>
         </div>
         <button class="hamburger">☰</button>
         <nav class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <h1>Directory</h1>
-        <div class="view-toggle">
-            <button id="grid-view">Grid View</button>
-            <button id="list-view">List View</button>
-        </div>
-        <div class="members grid"></div>
+        <h1>Discover Accra</h1>
+        <section class="visitor-message" id="visitorMessage"></section>
+        <section class="discover-grid" id="discoverContainer"></section>
+
     </main>
     <footer>
         <div class="footer-container">
@@ -62,7 +59,7 @@
             <div class="footer-center">
                 <a href="https://web.facebook.com/wilmex1/"><img src="images/facebook.svg" alt="Facebook"></a>
                 <a href="https://x.com/__1satoshi__"><img src="images/twitter.svg" alt="Twitter"></a>
-                <a href="www.linkedin.com/in/william-ntow-boateng-5a2285210/"><img src="images/linkedin.svg"
+                <a href="https://www.linkedin.com/in/william-ntow-boateng-5a2285210/"><img src="images/linkedin.svg"
                         alt="LinkedIn"></a>
             </div>
 

@@ -8,7 +8,7 @@ hamBtn.addEventListener('click', () => {
 document.addEventListener("DOMContentLoaded", () => {
     const ts = document.getElementById("timestamp");
     if (ts && !ts.value) {
-        ts.value = new Date().toLocaleString(); // friendlier format
+        ts.value = new Date().toLocaleString();
     }
 });
 
