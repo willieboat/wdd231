@@ -24,11 +24,11 @@
             "card1 card2 card3 card4"
             "card5 card6 card7 card8";
         grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .card {
-        max-width: 320px;
+        max-width: 270px;
     }
 
     .card img:hover {
