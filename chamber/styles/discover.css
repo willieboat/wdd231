@@ -80,6 +80,14 @@ main {
     padding: 2rem;
 }
 
+#visitorMessage {
+    min-height: 2rem;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
 .discover-grid {
     display: grid;
     grid-template-areas:
@@ -97,7 +105,9 @@ main {
     align-items: start;
     box-sizing: border-box;
     max-width: 1200px;
+    min-height: 850px;
     margin: 0 auto;
+
 }
 
 .card {
@@ -127,8 +137,8 @@ main {
 }
 
 .card button {
-    background-color: darkcyan;
-    color: white;
+    background-color: rgb(6, 174, 174);
+    color: black;
     border: none;
     border-radius: 5px;
     padding: 0.5rem 1rem;
